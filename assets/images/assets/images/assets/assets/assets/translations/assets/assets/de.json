@@ -1,0 +1,19 @@
+{
+  "bem_vindo": "Willkommen bei VoxFuture",
+  "entrar": "Anmelden",
+  "cadastro": "Registrieren",
+  "email": "E-Mail",
+  "senha": "Passwort",
+  "confirmar_senha": "Passwort bestätigen",
+  "esqueceu_senha": "Passwort vergessen?",
+  "painel": "Hauptmenü",
+  "nova_previsao": "Neue Vorhersage",
+  "historico": "Analyseverlauf",
+  "assinatura": "Abonnement",
+  "configuracoes": "Einstellungen",
+  "sair": "Abmelden",
+  "idioma": "Sprache",
+  "tema": "Thema",
+  "salvar": "Speichern",
+  "cancelar": "Abbrechen"
+}
