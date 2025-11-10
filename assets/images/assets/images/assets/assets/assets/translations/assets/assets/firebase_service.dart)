@@ -1,0 +1,78 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
+import '../config/firebase_options.dart';
+
+class FirebaseService {
+  static final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  /// Inicializa o Firebase com as opções corretas
+  static Future<void> initialize() async {
+    try {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+      debugPrint('✅ Firebase inicializado com sucesso');
+    } catch (e) {
+      debugPrint('❌ Erro ao inicializar o Firebase: $e');
+    }
+  }
+
+  /// Cria conta com e-mail e senha
+  Future<String?> signUp(String email, String password) async {
+    try {
+      await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
+      return null;
+    } on FirebaseAuthException catch (e) {
+      return _handleAuthError(e);
+    }
+  }
+
+  /// Login com e-mail e senha
+  Future<String?> signIn(String email, String password) async {
+    try {
+      await _auth.signInWithEmailAndPassword(
+          email: email, password: password);
+      return null;
+    } on FirebaseAuthException catch (e) {
+      return _handleAuthError(e);
+    }
+  }
+
+  /// Envia e-mail de redefinição de senha
+  Future<String?> resetPassword(String email) async {
+    try {
+      await _auth.sendPasswordResetEmail(email: email);
+      return null;
+    } on FirebaseAuthException catch (e) {
+      return _handleAuthError(e);
+    }
+  }
+
+  /// Logout do usuário atual
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
+
+  /// Stream para detectar login/logout em tempo real
+  Stream<User?> get authStateChanges => _auth.authStateChanges();
+
+  /// Erros tratados e traduzidos
+  String _handleAuthError(FirebaseAuthException e) {
+    switch (e.code) {
+      case 'user-not-found':
+        return 'Usuário não encontrado.';
+      case 'wrong-password':
+        return 'Senha incorreta.';
+      case 'email-already-in-use':
+        return 'Este e-mail já está em uso.';
+      case 'invalid-email':
+        return 'E-mail inválido.';
+      case 'weak-password':
+        return 'A senha é muito fraca.';
+      default:
+        return 'Erro: ${e.message ?? 'Desconhecido.'}';
+    }
+  }
+}
