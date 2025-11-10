@@ -1,0 +1,48 @@
+VoxFuture/
+│
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── .env.example
+│   ├── api_service.dart
+│   └── README.md
+│
+├── frontend/
+│   ├── lib/
+│   │   ├── main.dart
+│   │   ├── screens/
+│   │   │   ├── home_screen.dart
+│   │   │   ├── login_screen.dart
+│   │   │   └── splash_screen.dart
+│   │   ├── widgets/
+│   │   │   └── custom_button.dart
+│   │   └── utils/
+│   │       └── theme.dart
+│   ├── pubspec.yaml
+│   └── README.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+# 🌌 VOXFUTURE
+
+**VOXFUTURE** é uma aplicação híbrida composta por:
+
+- 🧠 **Backend AURIN** — Núcleo de IA e automação (FastAPI + Python)
+- 💫 **Frontend Flutter** — Interface visual elegante, azul e dourada, conectada ao núcleo inteligente
+
+---
+
+### ⚙️ Estrutura do Projeto
+---
+
+### 🚀 Execução
+
+**Backend:**
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+cd frontend
+flutter pub get
+flutter run
