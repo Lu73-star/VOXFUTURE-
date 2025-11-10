@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'utils/language_loader.dart';
 import 'screens/home_screen.dart';
+import 'services/auth_gate_v2.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,7 +42,7 @@ class _VoxFutureAppState extends State<VoxFutureApp> {
         DefaultMaterialLocalizations.delegate,
         DefaultCupertinoLocalizations.delegate,
       ],
-      home: HomeScreen(onLocaleChange: setLocale),
+      home: AuthGateV2(),
     );
   }
 }
