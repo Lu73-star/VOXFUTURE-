@@ -1,0 +1,19 @@
+{
+  "bem_vindo": "Welcome to VoxFuture",
+  "entrar": "Login",
+  "cadastro": "Sign Up",
+  "email": "Email",
+  "senha": "Password",
+  "confirmar_senha": "Confirm Password",
+  "esqueceu_senha": "Forgot your password?",
+  "painel": "Dashboard",
+  "nova_previsao": "New Prediction",
+  "historico": "Analysis History",
+  "assinatura": "Subscription",
+  "configuracoes": "Settings",
+  "sair": "Logout",
+  "idioma": "Language",
+  "tema": "Theme",
+  "salvar": "Save",
+  "cancelar": "Cancel"
+}
