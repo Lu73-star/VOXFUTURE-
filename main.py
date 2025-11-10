@@ -1,15 +1,25 @@
-name: voxfuture_frontend
-description: VoxFuture minimal frontend
-publish_to: "none"
-version: 0.0.1
+from fastapi import FastAPI
+from pydantic import BaseModel
 
-environment:
-  sdk: ">=2.18.0 <3.0.0"
+app = FastAPI(title="VoxFuture API", version="1.0")
 
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.6
+# Modelo de exemplo
+class Message(BaseModel):
+    text: str
 
-flutter:
-  uses-material-design: true
+# Rota principal
+@app.get("/")
+def read_root():
+    return {"message": "🚀 VoxFuture API ativa e funcionando!"}
+
+# Rota de análise de texto
+@app.post("/analyze")
+def analyze(msg: Message):
+    text = msg.text.lower()
+    mood = "positivo" if "amor" in text else "neutro"
+    return {"análise": f"Mensagem recebida: {text}", "humor_detectado": mood}
+
+# Inicialização
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=5000)
