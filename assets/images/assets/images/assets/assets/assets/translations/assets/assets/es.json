@@ -1,0 +1,19 @@
+{
+  "bem_vindo": "Bienvenido a VoxFuture",
+  "entrar": "Iniciar sesión",
+  "cadastro": "Registrarse",
+  "email": "Correo electrónico",
+  "senha": "Contraseña",
+  "confirmar_senha": "Confirmar contraseña",
+  "esqueceu_senha": "¿Olvidaste tu contraseña?",
+  "painel": "Panel principal",
+  "nova_previsao": "Nueva predicción",
+  "historico": "Historial de análisis",
+  "assinatura": "Suscripción",
+  "configuracoes": "Configuraciones",
+  "sair": "Salir",
+  "idioma": "Idioma",
+  "tema": "Tema",
+  "salvar": "Guardar",
+  "cancelar": "Cancelar"
+}
