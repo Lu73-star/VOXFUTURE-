@@ -1,12 +1,11 @@
-assets/
- ├── images/
- │    ├── logo.png
- │    ├── splash.png
- │    ├── icon.png
- │    └── backgrounds/
- │         └── login_bg.png
- └── translations/
-      ├── en.json
-      ├── es.json
-      ├── fr.json
-      └── de.json
+# Diretório de Imagens
+
+Coloque aqui as imagens e os recursos visuais do aplicativo VoxFuture.
+
+### Formatos suportados:
+- PNG
+- JPEG
+- SVG
+- WebP
+
+### Estrutura sugerida:
