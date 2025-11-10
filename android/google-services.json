@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "957218435739",
+    "project_id": "voxfuture-12d52",
+    "storage_bucket": "voxfuture-12d52.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957218435739:android:fdb486ad33baa37bcdcc3e",
+        "android_client_info": {
+          "package_name": "com.coffeetime.voxfuture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-2VvvLbrYF0xvm237XqV7uZttsQMlj9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957218435739:android:32b32593bed74aaacdcc3e",
+        "android_client_info": {
+          "package_name": "com.voxfuture.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-2VvvLbrYF0xvm237XqV7uZttsQMlj9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
