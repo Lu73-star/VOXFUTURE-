@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.voxfuture.app"
+        applicationId "com.coffeetime.voxfuture"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
