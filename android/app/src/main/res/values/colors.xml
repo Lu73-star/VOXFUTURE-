@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A0F24</color>
+    <color name="colorPrimaryDark">#080C1A</color>
+    <color name="colorAccent">#D4AF37</color>
+
+    <!-- Cores usadas nos botões -->
+    <color name="buttonBackground">#1A237E</color>
+    <color name="buttonOutline">#D4AF37</color>
+
+    <!-- Cores do texto -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#B0B0B0</color>
+
+    <!-- Fundo do app -->
+    <color name="backgroundDark">#0A0F24</color>
+</resources>
