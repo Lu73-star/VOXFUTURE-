@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/azul_escuro</item>
+        <item name="colorPrimaryVariant">@color/azul_escuro</item>
+        <item name="colorOnPrimary">@color/branco</item>
+
+        <item name="colorSecondary">@color/dourado</item>
+        <item name="colorSecondaryVariant">@color/dourado</item>
+        <item name="colorOnSecondary">@color/branco</item>
+
+        <item name="android:statusBarColor">@color/azul_escuro</item>
+        <item name="android:navigationBarColor">@color/azul_escuro</item>
+
+        <item name="android:background">@color/azul_escuro</item>
+    </style>
+
+</resources>
